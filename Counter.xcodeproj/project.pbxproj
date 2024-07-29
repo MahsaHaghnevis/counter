@@ -13,6 +13,7 @@
 		19AAC7752C57695100F76DD6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 19AAC7742C57695100F76DD6 /* Base */; };
 		19AAC7772C57695300F76DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19AAC7762C57695300F76DD6 /* Assets.xcassets */; };
 		19AAC77A2C57695300F76DD6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 19AAC7792C57695300F76DD6 /* Base */; };
+		19AAC7962C57781500F76DD6 /* ClassAndFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AAC7952C57781500F76DD6 /* ClassAndFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		19AAC7762C57695300F76DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19AAC7792C57695300F76DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19AAC77B2C57695300F76DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19AAC7952C57781500F76DD6 /* ClassAndFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAndFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				19AAC76D2C57695100F76DD6 /* AppDelegate.swift */,
+				19AAC7942C5777DE00F76DD6 /* Model */,
 				19AAC76F2C57695100F76DD6 /* SceneDelegate.swift */,
 				19AAC7712C57695100F76DD6 /* ViewController.swift */,
 				19AAC7732C57695100F76DD6 /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				19AAC77B2C57695300F76DD6 /* Info.plist */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		19AAC7942C5777DE00F76DD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19AAC7952C57781500F76DD6 /* ClassAndFunc.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				19AAC7722C57695100F76DD6 /* ViewController.swift in Sources */,
 				19AAC76E2C57695100F76DD6 /* AppDelegate.swift in Sources */,
+				19AAC7962C57781500F76DD6 /* ClassAndFunc.swift in Sources */,
 				19AAC7702C57695100F76DD6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
