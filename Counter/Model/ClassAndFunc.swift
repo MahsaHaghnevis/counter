@@ -7,25 +7,36 @@
 
 import Foundation
 
-
 class Logic {
+    
     private (set) var Countnumber : Int = 0
-    private var CountState : [Int] = [ 1, 2, 5 ] //available step values
-    private (set) var Step  = 1       //the step value
-    private var index = 0           //keeping track of step
-    private (set) var IsLocked : Bool = false //
-    func ChangeSpeed(){ //in case use hit the step button
+    
+    //available step values
+    private var CountState : [Int] = [ 1, 2, 5 ]
+    
+    //the step value
+    private (set) var Step  = 1
+    //keeping track of step
+    private var index = 0
+    private (set) var IsLocked : Bool = false
+    
+    
+    //in case use hit the step button
+    func ChangeSpeed(){
         
-        index=(index + 1)%3  //to handle return to head after hitting the tail
+        //to handle return to head after hitting the tail
+        index=(index + 1)%3
         Step = CountState[index]
     }
     
     func Increase(){
-        if IsLocked != true {
-            Countnumber += Step
-        }
+        
+        guard !IsLocked else { return }
+        
+        self.Countnumber += Step
     }
     func Decreasee(){
+        
         if IsLocked != true {
             Countnumber -= Step
         }
